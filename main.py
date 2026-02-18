@@ -22,3 +22,10 @@ model.fit(X_train,y_train)
 
 accuracy = model.score(X_test,y_test)
 print(f"Model accuracy: {accuracy * 100:.2f}%")
+
+import numpy as np
+
+example = np.array([[5.1,3.5,1.4,0.2]])
+
+prediction = model.predict(example)
+print("Class prediction:", iris.target_names[prediction[0]])
